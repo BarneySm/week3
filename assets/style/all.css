@@ -45,6 +45,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
 header, footer {
   background-color: #AA0601; }
 
@@ -162,5 +167,86 @@ header, footer {
   color: white;
   text-decoration: none;
   margin-right: 32px; }
+
+@media (max-width: 767px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  header .container {
+    padding: 0; } }
+
+@media (max-width: 767px) {
+  .logo {
+    padding-top: 12px;
+    padding-bottom: 12px; } }
+
+@media (max-width: 767px) {
+  .menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%; }
+  .menu li {
+    width: 50%;
+    border: 1px solid #fff;
+    margin: 0; }
+  .menu li a {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 0;
+    padding-top: 12px;
+    padding-bottom: 12px; } }
+
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 24px;
+    padding-bottom: 24px; }
+  .icon li img {
+    width: 24px;
+    height: 24px; }
+  .list {
+    display: none; }
+  .icon li {
+    margin-right: 8px; } }
+
+@media (max-width: 767px) {
+  .footer-contact ul {
+    font-size: 16px;
+    line-height: 24px; } }
+
+@media (max-width: 767px) {
+  .footer-copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .footer-copyright ul {
+    display: block; }
+  .footer-copyright p, li {
+    margin-bottom: 8px; } }
+
+@media (max-width: 992px) {
+  .footer {
+    padding-top: 48px;
+    padding-bottom: 40px; } }
+
+@media (max-width: 992px) {
+  .icon li img {
+    width: 40px;
+    height: 40px; }
+  .icon li {
+    margin-right: 16px; } }
 
 /*# sourceMappingURL=all.css.map */
